@@ -108,14 +108,17 @@ function findEmptyTiles(board) {
     return result;
 }
 
-function spawn(board) {
+function spawn(board, rng = Math.random) {
     const zeroCoordinates = findEmptyTiles(board);
     if (zeroCoordinates.length === 0) {
         return board;
     }
-    const spawnLocationIndex = Math.floor(Math.random() * zeroCoordinates.length)
-    const [row, col] = zeroCoordinates[spawnLocationIndex]
-    const newTile = Math.random() < 0.9 ? 2 : 4;
+    const spawnLocationIndex = Math.floor(rng() * zeroCoordinates.length);
+    const [row, col] = zeroCoordinates[spawnLocationIndex];
+    const newTile = rng() < 0.9 ? 2 : 4;
+    const newBoard = board.map((r) => [...r]);
+    newBoard[row][col] = newTile;
+    return newBoard;
 
 
 
