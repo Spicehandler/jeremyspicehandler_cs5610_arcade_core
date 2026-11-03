@@ -59,7 +59,7 @@ function slideBoardRight(board) {
     return result
 }
 
-function move(board, direction) {
+export function move(board, direction) {
     switch (direction) {
         case 'left':
             return slideBoardLeft(board)
@@ -77,7 +77,7 @@ function move(board, direction) {
 
 }
 
-function canMove(board, direction) {
+export function canMove(board, direction) {
     const result = move(board, direction);
     for (let i = 0; i < board.length; i++) {
         for (let j = 0; j < board[i].length; j++){
@@ -91,7 +91,7 @@ function canMove(board, direction) {
 
 }
 
-function hasMoves(board) {
+export function hasMoves(board) {
     return (canMove(board, 'left') || canMove(board, 'right') ||
      canMove(board, 'up') || canMove(board, 'down'))
 }
@@ -108,7 +108,7 @@ function findEmptyTiles(board) {
     return result;
 }
 
-function spawn(board, rng = Math.random) {
+export function spawn(board, rng = Math.random) {
     const zeroCoordinates = findEmptyTiles(board);
     if (zeroCoordinates.length === 0) {
         return board;

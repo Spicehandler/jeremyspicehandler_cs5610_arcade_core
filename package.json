@@ -1,0 +1,23 @@
+{
+  "name": "@spicehandler/jeremyspicehandler_cs5610_arcade_core",
+  "version": "1.0.0",
+  "description": "Business logic for 2048 game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spicehandler/jeremyspicehandler_cs5610_arcade_core.git"
+  },
+  "files" : ["src"],
+  "exports" : {"." : "./src/index.js"},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/spicehandler/jeremyspicehandler_cs5610_arcade_core/issues"
+  },
+  "homepage": "https://github.com/spicehandler/jeremyspicehandler_cs5610_arcade_core#readme"
+}
