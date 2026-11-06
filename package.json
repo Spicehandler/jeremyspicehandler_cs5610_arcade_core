@@ -1,5 +1,5 @@
 {
-  "name": "@spicehandler/jeremyspicehandler_cs5610_arcade_core",
+  "name": "@spicehandler/arcade-core",
   "version": "1.0.0",
   "description": "Business logic for 2048 game",
   "main": "index.js",

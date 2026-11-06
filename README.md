@@ -5,7 +5,7 @@ Game logic for 2048, written as pure JavaScript functions. No dependencies, no D
 ## Install
 
 ```
-npm install @spicehandler/jeremyspicehandler_cs5610_arcade_core
+npm install @spicehandler/arcade-core
 
 ## Usage
 
